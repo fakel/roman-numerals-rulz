@@ -4,7 +4,7 @@
   "scripts": {
     "test": "jest"
   },
-  "bin": "cli.js",
+  "bin": "bin/cli.js",
   "main": "index.js",
   "devDependencies": {
     "eslint": "^7.32.0",
