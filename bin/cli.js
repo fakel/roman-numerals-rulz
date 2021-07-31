@@ -5,7 +5,7 @@ const { hideBin } = require('yargs/helpers');
 const { parse, stringify } = require('..');
 
 yargs(hideBin(process.argv))
-  .command('parse [roman]', 'parse roman numeral to number', (yrg) => yrg
+  .command('parse <roman>', 'parse roman numeral to number', (yrg) => yrg
     .positional('roman', {
       describe: 'roman numeral',
     }), (argv) => {
@@ -15,7 +15,7 @@ yargs(hideBin(process.argv))
       console.log(error.message);
     }
   })
-  .command('stringify [number]', 'transform number to roman numeral', (yrg) => yrg
+  .command('stringify <number>', 'transform number to roman numeral', (yrg) => yrg
     .positional('number', {
       describe: 'number to transform',
     }), (argv) => {
