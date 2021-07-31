@@ -20,7 +20,7 @@ yargs(hideBin(process.argv))
       describe: 'number to transform',
     }), (argv) => {
     try {
-      console.log(stringify(argv.number));
+      console.log(stringify(parseInt(argv.number, 10)));
     } catch (error) {
       console.log(error.message);
     }
